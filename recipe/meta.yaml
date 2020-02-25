@@ -20,10 +20,13 @@ requirements:
     - pip
   run:
     - python
+    - pip
 
 test:
   imports:
     - numericalunits
+  commands:
+    - pip check
 
 about:
   home: https://github.com/sbyrnes321/numericalunits
