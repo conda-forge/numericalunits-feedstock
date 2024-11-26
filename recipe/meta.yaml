@@ -1,16 +1,16 @@
 {% set name = "numericalunits" %}
-{% set version = "1.25" %}
+{% set version = "1.26" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c32a482adae818a1a8d6c799bf9fb153326461d490c0de9deab9c694a6537eec
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8a0b69945dd65eacf6eef8c868bcd3298d7439f5882f507bb6060ec20c723e12
 
 build:
-  number: 6
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [py2k]
 
