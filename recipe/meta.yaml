@@ -1,5 +1,5 @@
 {% set name = "numericalunits" %}
-{% set version = "1.27" %}
+{% set version = "1.28" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8eb5124d7722f5677cef0ad00706a38a269bf25f21135924778a6e13dd823b33
+  sha256: 03164e36e7c1e96f03420040376daaeff3ac1011d610d94f92834c3298837a76
 
 build:
   number: 0
